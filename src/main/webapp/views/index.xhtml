@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: MoGI
+  Date: 24.06.2020
+  Time: 21:52
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets" xml:lang="ru" lang="ru"
+>
+
+<h:head>
+    <title>Пример</title>
+    <link rel="stylesheet" href="style.css"/>
+</h:head>
+<h:body>
+    <div class="topNavigation">
+        <a href="index.xhtml">Home</a>
+        <div class="topNav-center">
+            <h1>Take by self</h1>
+        </div>
+    </div>
+
+    <div class="contentPanel">
+        <p align="center">
+            <h:outputLabel class="redAlert" value="#{customerBean.error ? 'Пользователь не найден':'' }"/>
+        </p>
+        <h:form>
+            <table>
+                <caption>Ауентификация</caption>
+                <!-- Text input-->
+                <tr>
+                    <th>
+                        <label>Логин</label>
+                    </th>
+                    <td>
+                        <h:inputText id="login"
+                                     value="#{customerBean.login}"
+                                     required="true"
+                                     placeholder="Логин"
+                                     requiredMessage="Введите логин"
+                        />
+                    </td>
+                </tr>
+
+                <!-- Password input-->
+                <tr>
+                    <th>
+                        <label>Пароль</label>
+                    </th>
+                    <td>
+                        <h:inputSecret id="password"
+                                       value="#{customerBean.password}"
+                                       required="true"
+                                       placeholder="Пароль"
+                                       requiredMessage="Введите пароль"
+                        />
+                    </td>
+                </tr>
+                <!-- Button -->
+                <tr>
+                    <td></td>
+                    <td><h:commandButton value="Войти" action="#{customerBean.validateUserLogin}"/></td>
+                </tr>
+            </table>
+
+        </h:form>
+    </div>
+</h:body>
+
+</html>

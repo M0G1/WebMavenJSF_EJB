@@ -1,0 +1,146 @@
+body {
+    background-color: lightgreen;
+}
+
+.topNavigation {
+    position: relative;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topNavigation a:link, .topNavigation a:visited {
+    color: #FFFFFF;
+    float: left;
+    text-align: center;
+    padding: 25px 35px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+.topNavigation a:hover {
+    color: #FF0000;
+}
+
+.topNav-center {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.topNav-right {
+    float: right;
+}
+
+.topNav-right p {
+    /*padding-top: 25px;*/
+    color: white;
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+
+.topNav-center h1 {
+    color: #FFFFFF;
+}
+
+.content {
+
+}
+
+.content li {
+    list-style-type: none;
+}
+
+/*блок с формой и данными*/
+.contentPanel {
+    padding-top: 10px;
+}
+
+.contentPanel a:link, .contentPanel a:visited {
+
+}
+
+.contentPanel a:hover {
+    color: #FF9999;
+}
+
+.contentPanel td{
+    text-align: center;
+}
+
+.centeredForm{
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: auto;
+    line-height: 1.5;
+    background: #F0FFF0;
+
+    float: top;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+table {
+    background: #F0FFF0;
+    width: auto;
+    height: auto;
+    margin: auto;
+    line-height: 1.5
+}
+
+tr {
+    line-height: 2.5
+}
+
+
+td a{
+    text-decoration: blink;
+}
+
+
+#userDateLabel{
+    font-size: 25px;
+}
+
+.orderAddress{
+    font-size: 20px;
+}
+.separator{
+    border-top: 3px solid lightgreen;
+}
+
+caption {
+    font-size: 30pt;
+    background: #F0FFF0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*Форма закончилась и данными*/
+
+/*для вывода ошибки*/
+.userDoesNotExist input[type="text"], .userDoesNotExist input[type="password"] {
+    background-color: red;
+    color: white;
+}
+
+.userDoesNotExist input[type="text"]::-webkit-input-placeholder, .userDoesNotExist input[type="password"]::-webkit-input-placeholder {
+    color: #fffbd2;
+}
+
+/*для ссылок*/
+
+.Entry:hover {
+    color: red;
+}
+
+.redAlert{
+    font-size: 25px;
+    color: #FF0000;
+}

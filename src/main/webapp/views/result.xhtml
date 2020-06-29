@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: MoGI
+  Date: 25.06.2020
+  Time: 9:14
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+<h:head>
+    <title>Результат</title>
+    <link rel="stylesheet" href="style.css"/>
+    <c:if test="#{customerBean.customer == null}">
+        <meta http-equiv="refresh" content="5;url=index.xhtml"/>
+    </c:if>
+</h:head>
+
+<h:body>
+    <div class="topNavigation">
+        <a href="index.xhtml">Home</a>
+        <div class="topNav-center">
+            <h1>Take by self</h1>
+        </div>
+        <div class="topNav-right">
+            <p><h:outputLabel value="#{customerBean.customer == null ? 'Unknown': customerBean.login}"/></p>
+        </div>
+    </div>
+
+    <c:if test="#{customerBean.customer != null}">
+        <ui:repeat value="#{customerBean.customer.orders}" var="order">
+
+            <div class="contentPanel">
+                <table>
+
+                    <h:dataTable value="#{order}" var="predmet">\
+                        <f:facet name="header">По адрессу: #{order.getAddress()}</f:facet>
+                        <h:column>
+                            <f:facet name="header">Наименование</f:facet>
+                            #{predmet.name}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">Количество</f:facet>
+                            #{predmet.count}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">Цена</f:facet>
+                            #{predmet.price}
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">Дата доставки</f:facet>
+                            #{predmet.dateOfReceipt}
+                        </h:column>
+                    </h:dataTable>
+                </table>
+            </div>
+        </ui:repeat>
+        <!--    <div class="contentPanel">-->
+        <!--        <h:outputLabel value="#{customerBean.customer.toString()}"/>-->
+        <!--    </div>-->
+    </c:if>
+    <c:if test="#{customerBean.customer == null}">
+        <table>
+            <caption class="redAlert">Данных по пользователю нет</caption>
+            <tr>
+                <td>
+                    <div align="center"><a href="index.xhtml" >Назад</a></div>
+                </td>
+            </tr>
+        </table>
+    </c:if>
+</h:body>
+
+</html>

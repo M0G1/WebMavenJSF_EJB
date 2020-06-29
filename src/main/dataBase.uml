@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>main.dataBase</OriginalElement>
+  <nodes>
+    <node x="502.8228174603174" y="2017.0">main.dataBase.CustomerDML</node>
+    <node x="454.9652777777777" y="1522.0">main.model.Customer</node>
+    <node x="500.2198412698412" y="623.0">main.model.Order</node>
+    <node x="853.6023809523809" y="842.0">main.dataBase.OrderItemDML</node>
+    <node x="846.653373015873" y="1598.0">main.dataBase.CustomerOrdersDML</node>
+    <node x="0.0" y="875.0">main.dataBase.ItemDML</node>
+    <node x="551.2152777777777" y="0.0">main.model.Item</node>
+    <node x="122.96527777777771" y="1598.0">main.dataBase.OrderDML</node>
+    <node x="562.3880952380952" y="2492.0">main.dataBase.DataBase</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="main.dataBase.DataBase" target="main.dataBase.CustomerOrdersDML">
+      <point x="45.0" y="-102.5" />
+      <point x="719.8880952380952" y="2462.0" />
+      <point x="1062.653373015873" y="2462.0" />
+      <point x="72.0" y="146.5" />
+    </edge>
+    <edge source="main.dataBase.CustomerDML" target="main.model.Customer">
+      <point x="-78.19999999999993" y="-212.5" />
+      <point x="620.1228174603175" y="1987.0" />
+      <point x="526.7152777777777" y="1987.0" />
+      <point x="-71.75" y="222.5" />
+    </edge>
+    <edge source="main.dataBase.OrderDML" target="main.dataBase.OrderItemDML">
+      <point x="124.80000000000001" y="-146.5" />
+      <point x="403.7652777777777" y="1502.0" />
+      <point x="906.1023809523809" y="1502.0" />
+      <point x="-105.0" y="190.5" />
+    </edge>
+    <edge source="main.dataBase.OrderItemDML" target="main.model.Item">
+      <point x="78.75" y="-190.5" />
+      <point x="1089.8523809523808" y="583.0" />
+      <point x="744.5902777777777" y="583.0" />
+      <point x="74.375" y="276.5" />
+    </edge>
+    <edge source="main.dataBase.CustomerDML" target="main.dataBase.OrderDML">
+      <point x="-156.39999999999986" y="-212.5" />
+      <point x="541.9228174603176" y="1997.0" />
+      <point x="356.9652777777777" y="1997.0" />
+      <point x="78.0" y="146.5" />
+    </edge>
+    <edge source="main.dataBase.OrderDML" target="main.dataBase.ItemDML">
+      <point x="-124.80000000000001" y="-146.5" />
+      <point x="154.1652777777777" y="1502.0" />
+      <point x="186.75" y="1502.0" />
+      <point x="62.25" y="157.5" />
+    </edge>
+    <edge source="main.dataBase.ItemDML" target="main.model.Item">
+      <point x="-62.25" y="-157.5" />
+      <point x="62.25" y="573.0" />
+      <point x="566.0902777777777" y="573.0" />
+      <point x="-104.125" y="276.5" />
+    </edge>
+    <edge source="main.model.Customer" target="main.model.Order">
+      <point x="-71.75" y="-222.5" />
+      <point x="526.7152777777777" y="1492.0" />
+      <point x="607.3626984126984" y="1492.0" />
+      <point x="-42.857142857142776" y="409.5" />
+    </edge>
+    <edge source="main.dataBase.OrderDML" target="main.model.Order">
+      <point x="0.0" y="-146.5" />
+      <point x="278.9652777777777" y="1472.0" />
+      <point x="521.6484126984126" y="1472.0" />
+      <point x="-128.57142857142856" y="409.5" />
+    </edge>
+    <edge source="main.dataBase.OrderDML" target="main.model.Item">
+      <point x="-62.39999999999998" y="-146.5" />
+      <point x="216.56527777777774" y="1462.0" />
+      <point x="292.5585317460317" y="1462.0" />
+      <point x="292.5585317460317" y="593.0" />
+      <point x="625.5902777777777" y="593.0" />
+      <point x="-44.625" y="276.5" />
+    </edge>
+    <edge source="main.dataBase.DataBase" target="main.dataBase.ItemDML">
+      <point x="-90.0" y="-102.5" />
+      <point x="584.8880952380952" y="2472.0" />
+      <point x="62.25" y="2472.0" />
+      <point x="-62.25" y="157.5" />
+    </edge>
+    <edge source="main.dataBase.CustomerDML" target="main.model.Order">
+      <point x="78.20000000000005" y="-212.5" />
+      <point x="776.5228174603175" y="1997.0" />
+      <point x="813.2228174603174" y="1997.0" />
+      <point x="813.2228174603174" y="1492.0" />
+      <point x="693.0769841269841" y="1492.0" />
+      <point x="42.85714285714289" y="409.5" />
+    </edge>
+    <edge source="main.dataBase.CustomerOrdersDML" target="main.model.Item">
+      <point x="108.0" y="-146.5" />
+      <point x="1098.653373015873" y="1502.0" />
+      <point x="1179.1023809523808" y="1502.0" />
+      <point x="1179.1023809523808" y="573.0" />
+      <point x="774.3402777777777" y="573.0" />
+      <point x="104.125" y="276.5" />
+    </edge>
+    <edge source="main.dataBase.CustomerOrdersDML" target="main.dataBase.OrderItemDML">
+      <point x="36.0" y="-146.5" />
+      <point x="1026.653373015873" y="1502.0" />
+      <point x="1011.1023809523809" y="1502.0" />
+      <point x="0.0" y="190.5" />
+    </edge>
+    <edge source="main.model.Order" target="main.model.Item">
+      <point x="-75.0" y="-409.5" />
+      <point x="575.2198412698413" y="603.0" />
+      <point x="655.3402777777777" y="603.0" />
+      <point x="-14.875" y="276.5" />
+    </edge>
+    <edge source="main.dataBase.DataBase" target="main.dataBase.OrderItemDML">
+      <point x="90.0" y="-102.5" />
+      <point x="764.8880952380952" y="2472.0" />
+      <point x="1145.1533730158728" y="2472.0" />
+      <point x="1145.1533730158728" y="1492.0" />
+      <point x="1116.1023809523808" y="1492.0" />
+      <point x="105.0" y="190.5" />
+    </edge>
+    <edge source="main.dataBase.DataBase" target="main.dataBase.OrderDML">
+      <point x="-45.0" y="-102.5" />
+      <point x="629.8880952380952" y="2462.0" />
+      <point x="200.96527777777771" y="2462.0" />
+      <point x="-78.0" y="146.5" />
+    </edge>
+    <edge source="main.dataBase.CustomerDML" target="main.dataBase.CustomerOrdersDML">
+      <point x="156.39999999999998" y="-212.5" />
+      <point x="854.7228174603174" y="1997.0" />
+      <point x="918.653373015873" y="1997.0" />
+      <point x="-72.0" y="146.5" />
+    </edge>
+    <edge source="main.dataBase.DataBase" target="main.dataBase.CustomerDML">
+      <point x="0.0" y="-102.5" />
+      <point x="674.8880952380952" y="2472.0" />
+      <point x="698.3228174603174" y="2472.0" />
+      <point x="0.0" y="212.5" />
+    </edge>
+    <edge source="main.dataBase.CustomerOrdersDML" target="main.model.Order">
+      <point x="-36.0" y="-146.5" />
+      <point x="954.653373015873" y="1472.0" />
+      <point x="778.7912698412697" y="1472.0" />
+      <point x="128.57142857142856" y="409.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="943.4285714285713" y="2016.857142857143" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
